@@ -5,7 +5,7 @@ html {
 body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 5s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,38 +25,56 @@ body {
 }
 .container {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 40px;
   display: grid;
-  max-width: 400px;;
+  max-width: 960px;
   }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 4px 0;
+  font-weight: 400;
 }
 h2 {
-  font-size: 1.5em;
-  margin: 0 0 16px 0;
+  font-size: 1.2em;
+  margin: 0;
 }
 h3 {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 1.4rem;
-  color: #B80225;
-  padding:24px 0;
-  margin: 0;
-  border-top: 1px solid #23a6d5;
+  font-size: 1rem;
+  background-color: #E1F662;
+  padding: 4px 20px;
+  width: fit-content;
 }
 h4 {
   font-size: 1.2rem;
   color: #661E43;
   margin: 16px 0 0 0;
 }
-p { margin: 0 0 24px 0;}
 
-a {
+.work-items {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.work-items .item {
+  flex-basis:400px;
+  background-color: #f5f5f5;
+  padding: 16px;
+}
+.work-items .item img {
+  width: 100%;
+}
+.work-items .item h4 a {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
+.process {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.process .step {
+  width: 300px;
+}
+.process .step h5 {
+  font-weight: bold;
 }
